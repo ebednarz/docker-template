@@ -8,3 +8,29 @@
 - `__GIT_HOST__`
 - `__GIT_USER__`
 - `__YEAR__`
+
+## Container directory structure
+
+- `/home/node/`
+    - `app/`
+        - `source/`
+            - **/*
+        - `package.json`
+        - `package-lock.json`
+    - `root/`
+        - `ash.sh`
+        - `package.json -> ../root/package.json`
+        - `package-lock.json -> ../root/package-lock.json`
+
+## Usage
+
+    $ docker-compose up -d
+    $ docker-compose exec app sh
+    
+### Commands
+    
+- `add`
+- `remove`
+- `update`
+- `lint`
+- `test`
