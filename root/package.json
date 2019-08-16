@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "__PROJECT_NAME__",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "__PROJECT_DESCRIPTION__",
+  "author": "__AUTHOR__",
+  "repository": "__GIT_HOST__:__GIT_USER__/__PROJECT_NAME__.git",
+  "eslintConfig": {},
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
