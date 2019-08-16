@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  app:
+    build:
+      context: .
+      target: development
+    environment:
+      - ENV=/home/node/root/ash.sh
+    tty: true
+    volumes:
+      - ./root:/home/node/root
+      - ./source:/home/node/app/source
+    working_dir: /home/node/app
