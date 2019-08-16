@@ -13,14 +13,16 @@
 
 - `/home/node/`
     - `app/`
-        - `source/`
-            - **/*
-        - `package.json`
-        - `package-lock.json`
-    - `root/`
-        - `ash.sh`
+        - `node_modules/`
+            - `**/*`
+        - `source/` (mounted volume, under version control on the host)
+            - `**/*`
         - `package.json -> ../root/package.json`
         - `package-lock.json -> ../root/package-lock.json`
+    - `root/` (mounted volume, under version control on the host)
+        - `ash.sh`
+        - `package.json`
+        - `package-lock.json`
 
 ## Usage
 
