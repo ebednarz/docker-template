@@ -1,1 +1,7 @@
-# docker-template
+# __PROJECT_NAME__
+
+> __PROJECT_DESCRIPTION__
+
+## License
+
+MIT
