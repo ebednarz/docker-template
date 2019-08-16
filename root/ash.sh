@@ -44,7 +44,7 @@ color() {
   echo "\e[33m${1}\e[0m"
 }
 
-CONTAINER="__PROJECT__"
+CONTAINER="__PROJECT_NAME__"
 USER=$(whoami)
 ENTRY_POINT=$PWD
 NODE_VERSION=$(node --version | sed -r 's/^v//')
