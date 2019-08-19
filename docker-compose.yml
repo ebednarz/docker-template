@@ -5,9 +5,11 @@ services:
       context: .
       target: development
     environment:
-      - ENV=/home/node/root/ash.sh
+      - ENV=/home/node/shell/ash.sh
+      - PROJECT=__PROJECT_NAME__
     tty: true
     volumes:
-      - ./root:/home/node/root
+      - ../node-in-a-box-shell/source:/home/node/shell
+      - ./config:/home/node/config
       - ./source:/home/node/app/source
     working_dir: /home/node/app
